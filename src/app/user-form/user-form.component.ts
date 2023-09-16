@@ -8,15 +8,21 @@ import { User } from '../user';
 })
 export class UserFormComponent {
   razes = ['Asian','North American','African','UNK','Latin American'];
-  sexes = ['M','F','X'];
+  sex = ['M','F','X'];
 
-  model = new User('Dr. IQ', this.sexes[0], 23, this.razes[0]);
+  model = new User('Dr. IQ', this.sex[0], 23, this.razes[0]);
 
   submitted = false;
 
   onSubmit() { this.submitted = true; }
 
-  newHero() {
+  newUser() {
     this.model = new User('', '',17,'');
   }
+
+  showFormControls(form: any) {
+    return form && form.controls.name &&
+    form.controls.name.value; // Dr. IQ
+  }
+
 }
