@@ -10,13 +10,13 @@ export class UserFormComponent {
   razes = ['Asian','North American','African','UNK','Latin American'];
   sexes = ['M','F','X'];
 
-  model = new User(18, 'Dr. IQ', this.sexes[0], 23, this.razes[0]);
+  model = new User('Dr. IQ', this.sexes[0], 23, this.razes[0]);
 
   submitted = false;
 
   onSubmit() { this.submitted = true; }
 
   newHero() {
-    this.model = new User(42, '', '',17,'');
+    this.model = new User('', '',17,'');
   }
 }
