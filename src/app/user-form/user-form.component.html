@@ -1,0 +1,32 @@
+<div class="no-style" style="margin-left: 4px; margin-right: 4px;">
+    <div class="container">
+        <h1>User Form</h1>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age">
+          </div>
+  
+          <div class="form-group">
+            <label for="sexes">User sex</label>
+            <select class="form-control" id="sex" required>
+              <option *ngFor="let sex of sexes" [value]="sex">{{sex}}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="razes">User raze</label>
+            <select class="form-control" id="raze" required>
+              <option *ngFor="let raze of razes" [value]="raze">{{raze}}</option>
+            </select>
+          </div>
+  
+          <button type="submit" class="btn btn-success">Submit</button>
+  
+        </form>
+    </div>
