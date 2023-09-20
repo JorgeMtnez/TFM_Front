@@ -8,6 +8,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule } from '@angular/forms';
 import { ZipcodeMapComponent } from './zipcode-map/zipcode-map.component';
 import { MapGeoComponent } from './map-geo/map-geo.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 
@@ -22,7 +23,8 @@ import { MapGeoComponent } from './map-geo/map-geo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
