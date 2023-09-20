@@ -7,6 +7,7 @@ import { MapComponent } from './map/map.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule } from '@angular/forms';
 import { ZipcodeMapComponent } from './zipcode-map/zipcode-map.component';
+import { MapGeoComponent } from './map-geo/map-geo.component';
 
 
 
@@ -15,7 +16,8 @@ import { ZipcodeMapComponent } from './zipcode-map/zipcode-map.component';
     AppComponent,
     MapComponent,
     UserFormComponent,
-    ZipcodeMapComponent
+    ZipcodeMapComponent,
+    MapGeoComponent
   ],
   imports: [
     BrowserModule,

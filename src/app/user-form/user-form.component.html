@@ -46,12 +46,12 @@
             >
               <option *ngFor="let se of sex" [value]="se">{{ se }}</option>
             </select>
-            <div
+            <!-- <div
               [hidden]="sex.valid || sex.pristine"
               class="alert alert-danger"
             >
               Gender is required
-            </div>
+            </div> -->
           </div>
 
           <div class="form-group">
@@ -59,7 +59,7 @@
             <select class="form-control" id="raze" required>
               <option *ngFor="let raze of razes" [value]="raze">{{raze}}</option>
             </select> -->
-            <select
+            <!-- <select
               class="form-control"
               id="razes"
               required
@@ -68,23 +68,23 @@
               #power="ngModel"
             >
               <option *ngFor="let raze of razes" [value]="raze">{{ raze }}</option>
-            </select>
-            <div
+            </select> -->
+            <!-- <div
               [hidden]="razes.valid || razes.pristine"
               class="alert alert-danger"
             >
               Raze is required
-            </div>
+            </div> -->
           </div>
   
           <!-- <button type="submit" class="btn btn-success">Submit</button> -->
-          <button
+          <!-- <button
             type="submit"
             class="btn btn-success"
-            [disabled]="!heroForm.form.valid"
+            [disabled]="!userForm.form.valid"
           >
             Submit
-          </button>
+          </button> -->
   
         </form>
     </div>
