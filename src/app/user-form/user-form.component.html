@@ -1,66 +1,54 @@
 <div class="no-style" style="margin-left: 4px; margin-right: 4px;">
     <div class="container">
         <h1>User Form</h1>
-        <form>
+        <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label for="name">Name</label>
             <input
+              id="name"  
               type="text"
               class="form-control"
-              id="name"
               required
-              [(ngModel)]="model.name"
-              name="name"
-              #name="ngModel"
+              formControlName="name"
             />
-            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-              Name is required
-            </div>
           </div>
   
           <div class="form-group">
             <label for="age">Age</label>
-            <!-- <input type="number" class="form-control" id="age"> -->
               <input
+                id="age"
                 type="number"
                 class="form-control"
-                id="age"
-                [(ngModel)]="model.age"
-                name="age"
+                required
+                formControlName="age"
               />
           </div>
   
           <div class="form-group">
-            <!-- <label for="sexes">User sex</label>
-            <select class="form-control" id="sex" required>
-              <option *ngFor="let sex of sexes" [value]="sex">{{sex}}</option>
-            </select> -->
             <label for="sex">User gender</label>
             <select
-              class="form-control"
               id="sex"
+              class="form-control"              
               required
-              [(ngModel)]="model.sex"
-              name="sex"
-              #power="ngModel"
+              formControlName="sex"
             >
               <option *ngFor="let se of sex" [value]="se">{{ se }}</option>
             </select>
-            <!-- <div
-              [hidden]="sex.valid || sex.pristine"
-              class="alert alert-danger"
-            >
-              Gender is required
-            </div> -->
           </div>
 
           <div class="form-group">
             <label for="razes">User raze</label>
-            <select class="form-control" id="raze" required>
+            <select 
+                id="raze"
+                class="form-control"
+                required 
+                formControlName="raze">
               <option *ngFor="let raze of razes" [value]="raze">{{raze}}</option>
             </select>            
           </div>
   
-          <button type="submit" class="btn btn-success">Submit</button>  
+          <a routerLink="/home">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </a>  
         </form>
     </div>

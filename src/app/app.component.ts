@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+// import { FormUserService } from './form-user.service';
+// import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 
 @Component({
@@ -9,7 +9,10 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private http: HttpClient) {}
-  title: string = 'safe-street';
-  dataRecived: boolean = false;
+  constructor(
+    // private http: HttpClient,
+    // private FormUserService: FormUserService
+    ) {}
+  // title: string = 'safe-street';
+  // dataRecived: boolean = this.FormUserService.getDataRecivedValue();
 }
