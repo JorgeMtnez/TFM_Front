@@ -107,30 +107,6 @@ export class MapGeoComponent implements AfterViewInit{
         }
       ]
     };
-    // this.color = this.zipcodeLAService.getColorByZipCode(90027);
-    // this.zipcodeLAService.getColorByZipCode("90027")
-    //   .subscribe(data => {
-    //     this.color = data;
-    //   });
-    // this.zipcodeLAService.getColorByZipCode("90027")
-    //     .subscribe(
-    //       data => {
-    //         console.log('Respuesta del servicio:', data);
-    //         this.color = data;
-    //       },
-    //       error => {
-    //         console.error('Error en la solicitud:', error);
-    //         // Aquí puedes manejar el error según tus necesidades
-    //     }
-    //   );
-
-    // this.zipcodeLAService.getColorByZipCode("90027")
-    //   .subscribe(data => {
-    //     console.log('Respuesta del servicio:' +' #'+ data.data);
-    //     this.color = data.data;
-    //   });
-    // console.log('AAAAAAAAAA #'+this.color)
-    // L.geoJSON(geoJsonFeatures3,{style: areaStyle('#'+this.color)}).addTo(this.map);
 
     this.zipcodeLAService.getColorByZipCode("90003")
       .subscribe(data => {
@@ -143,18 +119,5 @@ export class MapGeoComponent implements AfterViewInit{
         console.log('Respuesta del servicio:' +' #'+ data.data);
         L.geoJSON(geoJsonFeatures27,{style: areaStyle('#'+data.data)}).addTo(this.map);
     });
-
-    // // this.color = this.zipcodeLAService.getColor(90003);
-    // this.zipcodeLAService.getColorByZipCode("90003")
-    //   .subscribe(data => {
-    //     console.log('Respuesta del servicio:', data.data);
-    //     this.color = data.data;
-    //   });
-    // L.geoJSON(geoJsonFeatures27,{style: areaStyle('#'+this.color)}).addTo(this.map);
   }
-  // getColor(): void{
-  //     this.zipcodeLAService.getTest()
-  //     .subscribe();
-  // }
-  
 }

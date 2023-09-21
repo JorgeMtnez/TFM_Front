@@ -7,10 +7,12 @@ import { User } from '../user';
   styleUrls: ['./user-form.component.css']
 })
 export class UserFormComponent {
-  razes = ['Asian','North American','African','UNK','Latin American'];
-  sex = ['M','F','X'];
+  // razes = ['Asian','North American','African','UNK','Latin American'];
+  // sex = ['M','F','X'];
+  razes = ['Asian','North American','African','Other','Latin American'];
+  sex = ['Male','Female','No comment'];
 
-  model = new User('Dr. IQ', this.sex[0], 23, this.razes[0]);
+  model = new User('Nombre Apellido', this.sex[0], 0, this.razes[0]);
 
   submitted = false;
 

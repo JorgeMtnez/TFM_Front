@@ -32,30 +32,4 @@ export class ZipcodeLAService {
     return this.http.get<{data: string}>(url);
   }
   
-
-  // getColor(number: number): string{
-  //   // const data = ""
-  //   try{
-  //     return '#' + this.http.get<Text>(this.baseUrl + number).subscribe(
-  //       response=>response);
-  //   } catch (e){
-  //     // throw(e);
-  //     console.log("aaaaaaaaaaaaaaaaaaaa")
-  //     return "#0d00ff";
-  //   }
-  // }
-
-  // getColor2(number: number): string{
-  //   // const data = ""
-  //   try{
-  //     return '#' + this.http.get<Text>(this.baseUrl + number).subscribe(
-  //       response=>response);
-  //   } catch (e){
-  //     // throw(e);
-  //     console.log("aaaaaaaaaaaaaaaaaaaa")
-  //     return "#0d00ff";
-      
-  //   }
-  // }
-  
 }

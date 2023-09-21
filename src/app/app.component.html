@@ -1,11 +1,11 @@
 <!-- <app-zipcode-map></app-zipcode-map> -->
 <!-- <app-map></app-map>  -->
-<app-map-geo></app-map-geo>
+<!-- <app-map-geo></app-map-geo> -->
 
 <ng-container *ngIf="!dataRecived" id="form">
    <app-user-form></app-user-form>
   </ng-container>
 
 <ng-container *ngIf="dataRecived" id="map">
-    <app-map></app-map> 
+  <app-map-geo></app-map-geo> 
   </ng-container>
