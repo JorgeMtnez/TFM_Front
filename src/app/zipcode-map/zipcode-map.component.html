@@ -81,10 +81,6 @@ function areaStyle(c){
 
 var map = L.map('map-canvas', {maxZoom: 16,minZoom: 2}).setView([33.97408676,-118.24983978],5);
 
-L.tileLayer('https://www.gm-maps.com/osm_tiles/{z}/{x}/{y}.png',{
-        attribution: ' <a href="https://www.zipdatamaps.com" target="_blank">&copy;Zipdatamaps</a><a href="https://www.openstreetmap.org/copyright" target="_blank"> &copy;OpenStreetMap Contributors</a>',
-        crossOrigin: false
-      }).addTo(map);
 
 overlays = {};
 layerControl = L.control.layers(overlays).addTo(map);
