@@ -1,7 +1,7 @@
-<ng-container *ngIf="dataRecived" id="form">
+<ng-container *ngIf="!dataRecived" id="form">
     <app-user-form></app-user-form>
    </ng-container>
  
- <ng-container *ngIf="!dataRecived" id="map">
+ <ng-container *ngIf="dataRecived" id="map">
    <app-map-geo></app-map-geo> 
    </ng-container>

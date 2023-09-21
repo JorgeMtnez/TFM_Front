@@ -47,6 +47,7 @@ export class UserFormComponent {
       hora
     )
     // window.location.reload();
+    this.router.navigate(['/map']);
   }
 
 
